@@ -1,0 +1,95 @@
+.text-shadow {
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 25)
+}
+
+.shadow1::before,
+.shadow1::after {
+    content: '';
+    position: absolute;
+    top: 80%;
+    bottom: 13px;
+    display: block;
+    width: 50%;
+    -webkit-box-shadow: 0 15px 15px rgb(37, 37, 37);
+    box-shadow: 0 15px 15px rgb(37, 37, 37);
+    z-index: -1;
+    left: 10px;
+}
+
+.shadow1::before {
+    background: transparent;
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.shadow1::after {
+    background: transparent;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.page_title h1::before {
+    background: #c0392b;
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page_title h1::after {
+    position: absolute;
+    content: '';
+    background: #fbc531;
+    width: 30px;
+    height: 2px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* .single_menu {
+    transition: .3s;
+} */
+
+
+/* .single_menu:hover img {
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+} */
+
+.single_menu img {
+    width: 33%;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    transition: .3s;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.menu_content h4 {
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+.menu_content h4 span {
+    font-size: 25px;
+}
+
+.menu_content p {
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+/*Menu ends*/
+
+footer {
+    background-color: #000000;
+}

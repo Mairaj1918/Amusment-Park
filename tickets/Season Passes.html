@@ -1,0 +1,552 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adventures Park</title>
+	
+ 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="CSS/css/main.css" type="text/css">
+	<link href="../CSS/CSS/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	
+	<!--Navbar-->
+	<div class="container-fluid">
+	<nav class="navbar navbar-default" style="background-color: #36C9FF; height: 60px">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="#"><img src="../Public/fun-park-logo_10250-1110.png" alt="Advanture Park-Logo" height="90px" width="120px" style="margin-top: -32px"></a>
+			</div>
+			
+				<div class="collapse navbar-collapse" id="myNavbar">
+				
+				<ul class="nav nav-pills" style="margin-top: 10px">
+					<li><a href="../Home.html">Home</a></li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Things To Do</a>
+							<ul class="dropdown-menu">
+								<li><a href="../Attraction.html">Atraction</a></li>
+								<li><a href="../Entertainment.html">Entertainment</a></li>
+								<li><a class="divider" href=""></a></li>
+								<li><a href="../Restaurant.html">Restaurant</a></li>
+							</ul>
+						
+					</li>
+					<li><a href="../Gallery.html">Gallery</a></li>
+					<li class="active"><a href="../Ticket.html">Ticket Price</a></li>
+					<li><a href="../About Us.html">About US</a></li>
+					<li><a href="../Contact Us.html">Contact US</a></li>
+				</ul>
+				
+				 <ul class="navbar-right">
+					<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span>Account</a></li>
+				</ul>	
+					<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <div id="loginbox" style="margin-top:50px;">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="loginform" class="form-horizontal" role="form">
+                                    
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">                                        
+                                    </div>
+                                
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                    </div>
+                                    
+
+                                
+                            <div class="input-group">
+                                      <div class="checkbox">
+                                        <label>
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <!-- Button -->
+
+                                    <div class="col-sm-12 controls">
+                                      <a id="btn-login" href="#" class="btn btn-success">Login  </a>
+                                      <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                            Don't have an account! 
+                                        <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                            Sign Up Here
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </form>     
+
+
+
+                        </div>                     
+                    </div>  
+        </div>
+        <div id="signupbox" style="display:none; margin-top:50px">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+                        </div>  
+                        <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form">
+                                
+                                <div id="signupalert" style="display:none" class="alert alert-danger">
+                                    <p>Error:</p>
+                                    <span></span>
+                                </div>
+                                    
+                                
+                                  
+                                <div class="form-group">
+                                    <label for="email" class="col-md-3 control-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Password</label>
+                                    <div class="col-md-9">
+                                        <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                    </div>
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="icode" class="col-md-3 control-label">Invitation Code</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="icode" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <!-- Button -->                                        
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                        <span style="margin-left:8px;">or</span>  
+                                    </div>
+                                </div>
+                                
+                                <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+                                    
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i>   Sign Up with Facebook</button>
+                                    </div>                                           
+                                        
+                                </div>
+                                
+                                
+                                
+                            </form>
+                         </div>
+                    </div>
+
+               
+               
+                
+         </div> 
+        </div>
+       
+      
+    </div>
+  </div>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar End -->
+		
+	<!-- Section-->
+	<section class="container-fluid">
+			<div class="panel panel-default">
+				<div class="jumbotron panel-body">
+					<div class="col-md-9">
+						<h2>Season Pass</h2>
+						<div class="cfp-product_subtitle"><p>Pays for itself in less than 2 visits!</p></div>
+						<div class="cfp-product_description"><p>Enjoy unlimited visits to Adventures Park and Wildwater Kingdom&nbsp;plus free season-long parking, early ride times, early access to Wildwater Kingdom, Bring-A-Friend discounts and more!</p>
+						</div>
+        		</div>
+					<div class="col-md-3">
+					<div class="cfp-product_price text-center">
+                                <span class="cfp-product_price-prefix">Just 5 Easy Payments of</span>
+
+                                <h4>$19.25*</h4>
+
+                                <span class="cfp-product_price-suffix">*After initial down payment of $26.75 due today. Or $123 total.<br><em><sup>Plus applicable taxes and fees.</sup></em></span>
+						
+								 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myTicket">Buy Now</button>
+
+  <!-- Modal -->
+ 							 <!-- Modal -->
+    <div class="modal fade" id="myTicket" role="dialog">
+    <div class="modal-dialog" style="margin: 10px;">
+    
+      <!-- Modal content-->
+      
+        <div class="modal-header" style="width: 1000px; background-color: #FFFFFF;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		<form class="form-horizontal" >
+<fieldset>
+<!-- Form Name -->
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="NAME">Name</label>  
+  <div class="col-md-8">
+  <input id="NAME" name="NAME" placeholder="Name" class="form-control input-md" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="Last NAME">Last Name</label>  
+  <div class="col-md-8">
+  <input id="LAST-NAME" name="NAME" placeholder="Name" class="form-control input-md" type="text">
+    
+  </div>
+</div>
+
+<!-- Search input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="email">Email</label>
+  <div class="col-md-8">
+    <input id="email" name="email" placeholder="Email" class="form-control input-md" required="" type="search">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="phone">Mobile</label>  
+  <div class="col-md-8">
+  <input id="phone" name="phone" placeholder="Mobile" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="date of birdth">Date Of Birdth</label>  
+  <div class="col-md-8">
+  <input id="date" name="date" placeholder="Travel date" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="duration">Gender</label>
+  <div class="col-md-8">
+    <select id="duration" name="duration" class="form-control">
+      <option value="1 Night/2 Days">Male</option>
+      <option value="2 Nights/3 Days">Female</option>
+      
+    </select>
+  </div>
+</div>
+
+
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="people">People</label>  
+  <div class="col-md-8">
+  <input id="people" name="people" placeholder="Number of people" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="from">From</label>  
+  <div class="col-md-8">
+ <select id="city" name="city" class="form-control">
+      <option value="America">Pakistan</option>
+      <option value="India">India</option>
+      <option value="America">America</option>
+    </select>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="Street Address">Street Address</label>  
+  <div class="col-md-8">
+  <input id="to" name="to" placeholder="Street Address" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="city">City</label>
+  <div class="col-md-8">
+       <input id="to" name="to" placeholder="City" class="form-control input-md" required="" type="text">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group col-sm-12">
+    <div class="col-sm-12 text-center">
+    <button id="submit" name="submit" class="btn btn-success">Submit Enquiry</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+       
+</div>
+		</div>
+	</div>
+                    </div>
+                
+					</div>
+				</div><br>
+				
+				<div class="jumbotron panel-body">
+					<div class="col-md-9">
+						<h2>PLATINUM PASS</h2>
+						<div class="cfp-product_subtitle"><p>Enjoy All Cedar Fair Parks</p></div>
+						<div class="cfp-product_description"><p>Enjoy all the benefits of the Season Pass with the added benefit of enjoying all of those exclusive privileges at all Cedar Fair Parks across the country, including Cedar Point, Kings Island and more!</p>
+						</div>
+        		</div>
+					<div class="col-md-3">
+					<div class="cfp-product_price text-center">
+                                <span class="cfp-product_price-prefix">Just 5 Easy Payments of</span>
+
+                                <h4>$34*</h4>
+
+                                <span class="cfp-product_price-suffix">*After initial down payment of $26.75 due today. Or $123 total.<br><em><sup>Plus applicable taxes and fees.</sup></em></span>
+						
+								 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myTicket">Buy Now</button>
+
+  <!-- Modal -->
+ 							 <!-- Modal -->
+    <div class="modal fade" id="myTicket" role="dialog">
+    <div class="modal-dialog" style="margin: 10px;">
+    
+      <!-- Modal content-->
+      
+        <div class="modal-header" style="width: 1000px; background-color: #FFFFFF;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		<form class="form-horizontal" >
+<fieldset>
+<!-- Form Name -->
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="NAME">Name</label>  
+  <div class="col-md-8">
+  <input id="NAME" name="NAME" placeholder="Name" class="form-control input-md" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="Last NAME">Last Name</label>  
+  <div class="col-md-8">
+  <input id="LAST-NAME" name="NAME" placeholder="Name" class="form-control input-md" type="text">
+    
+  </div>
+</div>
+
+<!-- Search input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="email">Email</label>
+  <div class="col-md-8">
+    <input id="email" name="email" placeholder="Email" class="form-control input-md" required="" type="search">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="phone">Mobile</label>  
+  <div class="col-md-8">
+  <input id="phone" name="phone" placeholder="Mobile" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="date of birdth">Date Of Birdth</label>  
+  <div class="col-md-8">
+  <input id="date" name="date" placeholder="Travel date" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="duration">Gender</label>
+  <div class="col-md-8">
+    <select id="duration" name="duration" class="form-control">
+      <option value="1 Night/2 Days">Male</option>
+      <option value="2 Nights/3 Days">Female</option>
+      
+    </select>
+  </div>
+</div>
+
+
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="people">People</label>  
+  <div class="col-md-8">
+  <input id="people" name="people" placeholder="Number of people" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="from">From</label>  
+  <div class="col-md-8">
+ <select id="city" name="city" class="form-control">
+      <option value="America">Pakistan</option>
+      <option value="India">India</option>
+      <option value="America">America</option>
+    </select>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="Street Address">Street Address</label>  
+  <div class="col-md-8">
+  <input id="to" name="to" placeholder="Street Address" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group col-sm-6">
+  <label class="col-md-4 control-label" for="city">City</label>
+  <div class="col-md-8">
+       <input id="to" name="to" placeholder="City" class="form-control input-md" required="" type="text">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group col-sm-12">
+    <div class="col-sm-12 text-center">
+    <button id="submit" name="submit" class="btn btn-success">Submit Enquiry</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+       
+</div>
+		</div>
+	</div>
+                    </div>
+                
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- Section Eind-->
+		
+	<!-- Footer -->
+	<footer class="container-fluid">
+		<div class="col-md-4">
+			<img src="../Public/fun-park-logo_10250-1110.png" alt="Adventure Park-Logo" height="110" width="140">
+			<a href="#" ><p style="margin-top: -14px">www.AdventurePark.com</p></a>
+		</div>
+		
+		<div class="col-md-5" style="margin-top: 28px; margin-left: -30px; text-align: center">
+			<ul class="social-network social-circle">
+				<li><a href="#" class="icoRss"><i class="fa fa-rss"></i></a></li>
+				<li><a href="#" class="icoFacebook"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#" class="icoTwitter"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#" class="icoGoogle"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#" class="icoLinkedin"><i class="fa fa-linkedin"></i></a></li>
+			</ul>
+			<br><br>	
+				
+			  <p>Contact us and we'll get back to you within 24 hours.</p>
+			  <p><span class="glyphicon glyphicon-map-marker"></span> Contact US</p>
+			  <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+			  <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+		</div>
+		<div class="col-md-3">
+			<ul style="list-style: none; margin-top: 25px; margin-left: 30px">
+				<li><a href="Home.html">Home</a></li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Things To Do<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="Atraction.html">Atraction</a></li>
+									<li><a href="Entertainment.html">Entertainment</a></li>
+									<li><a class="divider" href=""></a></li>
+									<li><a href="Restaurant.html">Restaurant</a></li>
+								</ul>
+							</li>
+							<li><a href="Gallery.html">Gallery</a></li>
+							<li><a href="About Us.html">About US</a></li>
+							<li><a href="Contact Us.html">Contact US</a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- Footer End -->
+	</div>	
+</body>
+</html>
