@@ -53,8 +53,9 @@
 }
 
 .single_menu {
-    border-right: 2px solid red;
-    border-bottom: 2px solid red;
+    margin-bottom: 15px;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
 }
 
 .single_menu img {
@@ -62,6 +63,10 @@
     height: 140px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+.menu_content {
+    padding-left: 10px;
 }
 
 .menu_content h4 {
