@@ -14,15 +14,20 @@
     <!-- FontAwesome CSS -->
     <link href="Style/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
 
+    <!---->
     <link rel="stylesheet" href="Style/style.css">
 
     <link rel="stylesheet" href="Style/icons.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+    <link rel="stylesheet" href="Style/gallery-grid.css">
     <!--Hover CSS-->
     <link rel="stylesheet" href="Style/css/hover-min.css">
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="Style/css/animate.css">
+
 
 </head>
 
@@ -72,88 +77,66 @@
         <!--Main Section-->
         <div class="container">
 
-            <h1 class="font-weight-light text-danger text-center text-shadow mt-5">Gallery</h1>
-
-            <hr class="mt-2 mb-5">
-
-            <div class="row text-center text-lg-left">
-
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail hvr-grow" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
-                    </a>
-                </div>
+            <div class="font-weight-bold text-center text-uppercase mt-4">
+                <h2 class="text-danger text-shadow">Gallery</h2>
             </div>
 
-            <hr class="mt-2 mb-3">
-            <ul class="pagination pagination-sm">
-                <Li class="page-item">
-                    <a class="page-link hvr-fade" href="#"><i class="fa fa-less-than"></i></a>
-                </Li>
-                <Li class="page-item"><a class="page-link hvr-fade" href="#">1</a></Li>
-                <Li class="page-item"><a class="page-link hvr-fade" href="#">2</a></Li>
-                <Li class="page-item"><a class="page-link hvr-fade" href="#">3</a></Li>
-                <Li class="page-item"><a class="page-link hvr-fade" href="#">4</a></Li>
-                <Li class="page-item">
-                    <a class="page-link hvr-fade" href=""><i class="fa fa-greater-than"></i></a>
-                </Li>
-            </ul>
+            <hr class="h-25 w-50 mx-auto">
+
+            <div class="tz-gallery">
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="Public/Gallery/brandon-hoogenboom-P0MX2XCqbFc-unsplash.jpg">
+                            <img src="Public/Gallery/brandon-hoogenboom-P0MX2XCqbFc-unsplash.jpg" alt="Park" class=" hvr-grow">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="Public/Gallery/ckturistando-HTCQCvwV9XY-unsplash.jpg">
+                            <img src="Public/Gallery/ckturistando-HTCQCvwV9XY-unsplash.jpg" alt="Bridge" class=" hvr-grow">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a class="lightbox" href="Public/Gallery/eunice-stahl-8Nyw2PQfSFw-unsplash.jpg">
+                            <img src="Public/Gallery/eunice-stahl-8Nyw2PQfSFw-unsplash.jpg" alt="Tunnel" class=" hvr-grow">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="Public/Gallery/jeremiah-lawrence-eNfzBf1Ru1s-unsplash.jpg">
+                            <img src="Public/Gallery/jeremiah-lawrence-eNfzBf1Ru1s-unsplash.jpg" alt="Coast" class=" hvr-grow">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="Public/Gallery/jeremiah-lawrence-QBN_X4H0x9U-unsplash.jpg">
+                            <img src="Public/Gallery/jeremiah-lawrence-QBN_X4H0x9U-unsplash.jpg" alt="Rails" class=" hvr-grow">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="Public/Gallery/max-bender-QdmT9XvjgH8-unsplash.jpg">
+                            <img src="Public/Gallery/max-bender-QdmT9XvjgH8-unsplash.jpg" alt="Traffic" class=" hvr-grow">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="Public/Gallery/sept-commercial-EnrusDZBZBc-unsplash.jpg">
+                            <img src="Public/Gallery/sept-commercial-EnrusDZBZBc-unsplash.jpg" alt="Rocks" class=" hvr-grow">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="Public/Gallery/olia-nayda-nAXi4iQ74cA-unsplash.jpg">
+                            <img src="Public/Gallery/olia-nayda-nAXi4iQ74cA-unsplash.jpg" alt="Benches" class=" hvr-grow">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="Public/Gallery/oneisha-lee-tQdNXd-6xao-unsplash.jpg">
+                            <img src="Public/Gallery/oneisha-lee-tQdNXd-6xao-unsplash.jpg" alt="Sky" class=" hvr-grow">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+
         <!-- add 'footer' snippet in css -->
         <footer class="footer no-margin ">
             <div class="row ">
@@ -194,7 +177,10 @@
         </footer>
     </div>
     <!-- Optional JavaScript -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="Style/js/jquery.min.js "></script>

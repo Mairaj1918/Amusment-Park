@@ -14,10 +14,14 @@
     <!-- FontAwesome CSS -->
     <link href="Style/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
 
+    <!---->
     <link rel="stylesheet" href="Style/style.css">
 
     <link rel="stylesheet" href="Style/icons.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+    <link rel="stylesheet" href="Style/gallery-grid.css">
     <!--Hover CSS-->
     <link rel="stylesheet" href="Style/css/hover-min.css">
 
@@ -69,7 +73,7 @@
             </div>
         </nav>
         <!-- add 'carousel-slider' snippet in css -->
-        <div id="demo" class="media-qery-carousel carousel slide animated bounceInLeft fast delay-1s" data-ride="carousel">
+        <div id="demo" class="media-qery-carousel carousel slide animated bounceInLeft fast delay-1s mt-5" data-ride="carousel">
             <ul class="carousel-indicators ">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
@@ -78,7 +82,7 @@
             </ul>
             <div class="carousel-inner">
                 <div class="carousel-item active animated lightSpeedIn fast">
-                    <img src="Public/Gallery/Europa-Park.jpg" alt="Slider-01" height="400" width="100%">
+                    <img src="Public/Slide Image/josh-howard-WRUNGuEebS0-unsplash.jpg" alt="Slider-01" height="500" width="100%">
                     <div class="carousel-caption">
                         <h3 class="text-uppercase">
                             Lorem ipsum
@@ -87,7 +91,7 @@
                     </div>
                 </div>
                 <div class="carousel-item animated  lightSpeedIn fast">
-                    <img src="Public/Gallery/theDragon.jpg" alt="Slider-02" height="400" width="100%">
+                    <img src="Public/Slide Image/aiman-hussein-X-6lRDtTlgA-unsplash (1).jpg" alt="Slider-02" height="500" width="100%">
                     <div class="carousel-caption">
                         <h3 class="text-uppercase">
                             Lorem ipsum
@@ -96,7 +100,7 @@
                     </div>
                 </div>
                 <div class="carousel-item animated  lightSpeedIn fast">
-                    <img src="Public/Gallery/iama.jpg" alt="Slider-03" height="400" width="100%">
+                    <img src="Public/Slide Image/kieran-white-ApBBVS2csbY-unsplash (1).jpg" alt="Slider-03" height="500" width="100%">
                     <div class="carousel-caption">
                         <h3 class="text-uppercase">
                             Lorem ipsum
@@ -105,7 +109,7 @@
                     </div>
                 </div>
                 <div class="carousel-item animated  lightSpeedIn fast">
-                    <img src="Public/Gallery/8406891759_9106672764_z.jpg" alt="Slider-04" height="400" width="100%">
+                    <img src="Public/Slide Image/quick-ps-pprY3KCsoAg-unsplash (1).jpg" alt="Slider-04" height="500" width="100%">
                     <div class="carousel-caption">
                         <h3 class="text-uppercase">
                             Lorem ipsum
@@ -117,66 +121,55 @@
 
             <!-- Left and right controls -->
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon bg-danger"></span>
+                <span class="bg-dark rounded-circle p-4"><i class="fa fa-chevron-left"></i></span>
             </a>
             <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon bg-danger"></span>
+                <span class="bg-dark rounded-circle p-4"><i class="fa fa-chevron-right"></i></span>
             </a>
         </div>
 
         <!--Content-->
-        <div class="shadow mt-4">
-            <div class="bg-white border-danger">
-                <h1 class="font-weight-light text-danger text-center  text-shadow">Things To Do</h1>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card border-danger mb-4 hvr-glow">
+        <div class="shadow mt-4 pt-3">
+
+            <h1 class="font-weight-light text-danger text-center  text-shadow">Things To Do</h1>
+            <hr class="h-25 w-50">
+
+            <div class="row mt-4 pb-5">
+                <div class="col-md-4 col-12">
+                    <div class="card border-danger hvr-grow-shadow mb-5">
                         <img src="Public/thingtodo/miles-storey-X45VKpWV7hw-unsplash.jpg" alt="Atraction" class="card-img-top">
-                        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
-                            href="https://unsplash.com/@miless?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Miles Storey"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span>
-                            <span style="display:inline-block;padding:2px 3px">Miles Storey</span>
-                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Atraction</h5>
+                            <h5 class="card-title text-center">Atraction</h5>
                             <p class="card-text">
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                             </p>
-                            <a class="btn btn-outline-danger w-25" href="#" role="button">More</a>
+                            <a class="btn btn-outline-danger" href="#" role="button">More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card border-danger mb-4 hvr-glow">
+                <div class="col-md-4 col-12">
+                    <div class="card border-danger hvr-grow-shadow mb-5">
                         <img src="Public/thingtodo/dan-gold-E6HjQaB7UEA-unsplash.jpg" alt="Food Courts" class="card-img-top">
-                        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
-                            href="https://unsplash.com/@danielcgold?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Dan Gold"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span>
-                            <span style="display:inline-block;padding:2px 3px">Dan Gold</span>
-                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Food Courts</h5>
+                            <h5 class="card-title text-center">Food Courts</h5>
                             <p class="card-text">
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                             </p>
-                            <a class="btn btn-outline-danger w-25" href="#" role="button">More</a>
+                            <a class="btn btn-outline-danger" href="#" role="button">More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card border-danger mb-4 hvr-glow">
+                <div class="col-md-4 col-12">
+                    <div class="card border-danger hvr-grow-shadow mb-5">
                         <img src="Public/thingtodo/felipe-galvan-hMb2xcV_I0Q-unsplash.jpg" alt="Shows and Entertainment" class="card-img-top">
-                        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
-                            href="https://unsplash.com/@fng137?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Felipe Galvan"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span>
-                            <span style="display:inline-block;padding:2px 3px">Felipe Galvan</span>
-                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Shows and Entertainment</h5>
+                            <h5 class="card-title text-center">Shows and Entertainment</h5>
                             <p class="card-text">
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                             </p>
-                            <a class="btn btn-outline-danger w-25" href="#" role="button">More</a>
+                            <a class="btn btn-outline-danger" href="#" role="button">More</a>
                         </div>
                     </div>
                 </div>
@@ -184,140 +177,148 @@
         </div>
         <!--Content Gallery-->
         <div class="shadow-lg mt-4 mb-3">
-            <div class="border-bottom border-danger">
-                <h1 class="font-weight-light text-danger text-center text-shadow">Gallery</h1>
-            </div>
+
+            <h1 class="font-weight-light text-danger text-center text-shadow">Gallery</h1>
+            <hr class="h-25 w-50">
+
             <div id="carouselFourColumn" class="carousel slide mt-4" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselFourColumn" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselFourColumn" data-slide-to="1"></li>
                     <li data-target="#carouselFourColumn" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner mb-3">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/Europa-Park.jpg" alt="" class="img-thumbnail"></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/Europa-Park.jpg" alt="" class="img-thumbnail"></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/Europa-Park.jpg" alt="" class="img-thumbnail"></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/Europa-Park.jpg" alt="" class="img-thumbnail"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/BNPB-06-Beston-hand-paddle-boat-for-kids.jpg" alt="" class="img-thumbnail"></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/BNPB-06-Beston-hand-paddle-boat-for-kids.jpg" alt="" class="img-thumbnail"></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/BNPB-06-Beston-hand-paddle-boat-for-kids.jpg" alt="" class="img-thumbnail"></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/BNPB-06-Beston-hand-paddle-boat-for-kids.jpg" alt="" class="img-thumbnail"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/fantasyland-hong-kong-disneyland-lantau-island-hong-kong-china-BX0CE1.jpg" alt="" class="img-thumbnail"></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/fantasyland-hong-kong-disneyland-lantau-island-hong-kong-china-BX0CE1.jpg" alt="" class="img-thumbnail"></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/fantasyland-hong-kong-disneyland-lantau-island-hong-kong-china-BX0CE1.jpg" alt="" class="img-thumbnail"></a>
-                                </div>
-                            </div>
 
-                            <div class="col-md-3">
-                                <div class="card hvr-grow">
-                                    <a href="#Public/Gallery/"><img src="Public/Gallery/fantasyland-hong-kong-disneyland-lantau-island-hong-kong-china-BX0CE1.jpg" alt="" class="img-thumbnail"></a>
+
+                <div class="carousel-inner mb-3">
+                    <div class="tz-gallery">
+                        <div class="carousel-item active">
+                            <div class="row mx-auto">
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/brandon-hoogenboom-P0MX2XCqbFc-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/brandon-hoogenboom-P0MX2XCqbFc-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/ckturistando-HTCQCvwV9XY-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/ckturistando-HTCQCvwV9XY-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/eunice-stahl-8Nyw2PQfSFw-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/eunice-stahl-8Nyw2PQfSFw-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/ckturistando-HTCQCvwV9XY-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/ckturistando-HTCQCvwV9XY-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/jeremiah-lawrence-eNfzBf1Ru1s-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/jeremiah-lawrence-eNfzBf1Ru1s-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/jeremiah-lawrence-QBN_X4H0x9U-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/jeremiah-lawrence-QBN_X4H0x9U-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/max-bender-QdmT9XvjgH8-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/max-bender-QdmT9XvjgH8-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/jeremiah-lawrence-QBN_X4H0x9U-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/jeremiah-lawrence-QBN_X4H0x9U-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/olia-nayda-nAXi4iQ74cA-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/olia-nayda-nAXi4iQ74cA-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/oneisha-lee-tQdNXd-6xao-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/oneisha-lee-tQdNXd-6xao-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/sept-commercial-EnrusDZBZBc-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/sept-commercial-EnrusDZBZBc-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="Public/Gallery/oneisha-lee-tQdNXd-6xao-unsplash.jpg" class="lightbox">
+                                        <img src="Public/Gallery/oneisha-lee-tQdNXd-6xao-unsplash.jpg" alt="" class="img-fluid hvr-grow">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#carouselFourColumn" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-                </a>
-                <a class="float-right" href="#carouselFourColumn" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-                </a>
+            </div>
+            <a href="#carouselFourColumn" role="button" data-slide="prev">
+                <span class="bg-dark p-2" aria-hidden="true"><i class="fa fa-angle-double-left text-light"></i></span>
+            </a>
+            <a class="float-right" href="#carouselFourColumn" role="button" data-slide="next">
+                <span class="bg-dark p-2" aria-hidden="true"><i class="fa fa-angle-double-right hvr-icon-up text-light"></i></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- add 'footer' snippet in css -->
+    <footer class="footer no-margin">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-center">
+                <div class="border border-danger p-2 m-5 badge-light hvr-grow">
+                    <span class="text-danger">Amusement</span> <span class="text-dark-50">Park</span>
+                </div>
+                <a class="text-decoration-none text-light hvr-underline-from-center hvr-grow" href="#">www.AdventurePark.com</a>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-center mt-5">
+                <ul class="social-network social-circle list-unstyled">
+                    <li class="d-inline mt-0 ml-3"><a href="#" class="icoFacebook hvr-grow hvr-icon-spin"><i class="fab fa-facebook-f hvr-icon"></i></a></li>
+                    <li class="d-inline mt-0 ml-3"><a href="#" class="icoTwitter hvr-grow hvr-icon-spin"><i class="fab fa-twitter hvr-icon"></i></a></li>
+                    <li class="d-inline mt-0 ml-3"><a href="#" class="icoYoutube hvr-grow hvr-icon-spin"><i class="fab fa-youtube hvr-icon"></i></a></li>
+                </ul>
+                <div class="cont font-weight-bold mt-3 text-white mb-5">
+                    <p class="pb-1">Contact us and we'll get back to you within 24 hours.</p>
+                    <h4 class="pb-2"><i class="fa fa-map-marker-alt text-truncate"></i><span class="text-danger"> Contact US</span></h4>
+                    <span><i class="fa fa-phone text-truncate"></i> +00 1515151515</span><br>
+                    <span><i class="fa fa-envelope text-truncate"></i> myemail@something.com</span>
+                </div>
+
+
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="navbar-dark mb-5">
+                    <ul class="navbar-nav mt-5 ml-5 text-center text-uppercase">
+                        <li class="nav-item hvr-grow"><a class="nav-link hvr-underline-from-center" href="#">About Us</a></li>
+                        <li class="nav-item hvr-grow"><a class="nav-link hvr-underline-from-center" href="#">Privacy Policy</a></li>
+                        <li class="nav-item hvr-grow"><a class="nav-link hvr-underline-from-center" href="#">Terms of Use</a></li>
+                        <li class="nav-item hvr-grow"><a class="nav-link hvr-underline-from-center" href="#">FAQs</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <!-- add 'footer' snippet in css -->
-        <footer class="footer no-margin">
-            <div class="row">
-                <div class="col-md-4 pl-5 pr-5 mt-5 text-center">
-                    <div class="border border-danger p-2 m-5 badge-light hvr-grow">
-                        <span class="text-danger">Amusement</span> <span class="text-dark-50">Park</span>
-                    </div>
-                    <a class="text-decoration-none text-light hvr-underline-from-center hvr-grow" href="#">www.AdventurePark.com</a>
-                </div>
-
-                <div class="col-md-5 col-12 text-center mt-5">
-                    <ul class="social-network social-circle list-unstyled">
-                        <li class="d-inline mt-0 ml-3"><a href="#" class="icoFacebook hvr-grow hvr-icon-spin"><i class="fab fa-facebook-f hvr-icon"></i></a></li>
-                        <li class="d-inline mt-0 ml-3"><a href="#" class="icoTwitter hvr-grow hvr-icon-spin"><i class="fab fa-twitter hvr-icon"></i></a></li>
-                        <li class="d-inline mt-0 ml-3"><a href="#" class="icoYoutube hvr-grow hvr-icon-spin"><i class="fab fa-youtube hvr-icon"></i></a></li>
-                    </ul>
-                    <div class="cont font-weight-bold mt-3 text-white mb-5">
-                        <p class="pb-1">Contact us and we'll get back to you within 24 hours.</p>
-                        <h4 class="pb-2"><i class="fa fa-map-marker-alt text-truncate"></i><span class="text-danger"> Contact US</span></h4>
-                        <span><i class="fa fa-phone text-truncate"></i> +00 1515151515</span><br>
-                        <span><i class="fa fa-envelope text-truncate"></i> myemail@something.com</span>
-                    </div>
-
-
-                </div>
-
-                <div class="col-md-3">
-                    <div class="navbar-dark mb-5">
-                        <ul class="navbar-nav mt-5 ml-5 text-center text-uppercase">
-                            <li class="nav-item hvr-grow"><a class="nav-link hvr-underline-from-center" href="#">About Us</a></li>
-                            <li class="nav-item hvr-grow"><a class="nav-link hvr-underline-from-center" href="#">Privacy Policy</a></li>
-                            <li class="nav-item hvr-grow"><a class="nav-link hvr-underline-from-center" href="#">Terms of Use</a></li>
-                            <li class="nav-item hvr-grow"><a class="nav-link hvr-underline-from-center" href="#">FAQs</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    </footer>
     </div>
     <!-- Optional JavaScript -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="Style/js/jquery.min.js"></script>
